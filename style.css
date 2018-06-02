@@ -87,3 +87,17 @@ img {
   max-width: 100%;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 }
+
+footer {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 18px;
+}
+
+footer a {
+  transition: color .2s;
+  color: rgba(255, 255, 255, 0.8);
+}
+footer a:hover {
+  color: rgba(255, 255, 255, 1);
+}
