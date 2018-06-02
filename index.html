@@ -3,15 +3,23 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h1>Welcome to AfroCTF!</h1>
-    <div>Your first challenge, is just taking a look under the hood. Right-click on this page, and see if you can find the password.
-    <form>
-      <input id="input" type="text" placeholder="Enter super secret password"></input>
-      <button id="enter" data-password="abc123">Enter</button>
-    </form>
-    <div class="hidden">
-      <button id="next">Next Challenge!</button>
-    </div>
+    <main>
+      <h1>Welcome to AfroCTF!</h1>
+      <p>Did you know that all pages are made of a special language called HTML? Your first challenge is taking a look under the hood of this web page. Let's uncover the secret password to continue.</p> 
+      <p>Right-click on this page and click on <code>View Page Source</code>. You'll see a bunch of text that looks like this:</p>
+      <img src="inspect.png"/>
+      <p>Explore the code and see if you can find the super secret password.</p>
+        <form>
+          <input id="input" type="text" placeholder="Enter super secret password"></input>
+          <button id="enter" data-password="tacocat">Enter</button>
+        </form>
+      </p>
+      <div class="hidden">
+        <h2>Nice Job! 🎉</h2>
+        <p>You found it! The source code contains all the things that make up this page, including the password. If you are building out a website, be sure not to include sensitive information in your code. People can still inspect it, even if it's not visible!</p>
+        <a class="next" href="two.html">Next Challenge →</button>
+      </div>
+    </main>
     <script src="one.js"></script>
   </body>
 </html>
