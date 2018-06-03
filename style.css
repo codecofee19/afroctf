@@ -10,6 +10,7 @@ body {
   padding: 3em;
   font-family: Avenir, sans-serif;
   font-size: 24px;
+  line-height: 36px;
   background: rgb(131,58,180);
   background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
 }
@@ -26,7 +27,8 @@ input[type="text"] {
   border-radius: 10px;
 }
 
-button {
+button,
+input[type="submit"] {
   font-size: inherit;
   transition: all .2s;
   border: 1px solid #000851;
@@ -35,9 +37,10 @@ button {
   background: none;
 }
 
-button:hover {
+button:hover,
+input[type="submit"]:hover {
   cursor: pointer;
-  transform: translateY(-2px);
+  transform: scale(1.05, 1.05);
 }
 
 pre {
@@ -54,7 +57,7 @@ code {
 main {
   margin: 0 auto;
   max-width: 768px;
-  padding: 1em;
+  padding: 2em;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
@@ -71,14 +74,14 @@ aside {
 .next {
   display: block;
   text-align: right;
-  transition: all .2s;
 }
 
-.next:hover {
-    color: #0055a0;
+a:hover {
+  color: #0055a0;
 }
 
 a {
+  transition: all .2s;
   text-decoration: none;
   color: #0074D9;
 }
@@ -100,4 +103,32 @@ footer a {
 }
 footer a:hover {
   color: rgba(255, 255, 255, 1);
+}
+
+.web:before{
+  content: "● ● ●";
+  color: #999;
+  text-align: left;
+  font-size: 1.5em;
+  background: #ccc;
+  display: block;
+  padding: 2px 8px 6px 8px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.web-content {
+  border: 1px solid #ccc;
+  padding: 1em;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.20);
+}
+
+cite {
+  font-size: 18px;
+}
+
+hr {
+  max-width: 100px;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.5);
 }

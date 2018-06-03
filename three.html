@@ -1,39 +1,31 @@
-<HTML>
-
-<HEAD><TITLE></TITLE></HEAD>
-
-<BODY>
-
-<H1> Intro to Cross-Site Scripting  </H1>
-
-
-<P> Sometimes people who make websites that are vunlerable to hackers. One way that websites are vulnerable is cross site-scripting. Cross-site scripting is tricking a website into executing your code. You can do all kinds of things from making a popup, steal hidden data, or even change the contents of the website itself!  </P>
-
- 
-
-<P> Here is code that executes a popup: </P>
-
-
-
-<P>Paste it into the input form below and see what happens!</P>
-
-
-<form action="post.php" method="post">
- <input type="text" name="name" value="">
- <input type="submit" name="submit" value="Submit">
-</form>
-
-</BODY>
-
-
-
-
-
-
-
-
-
-
-
-
-</HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>AfroCTF</title>
+  </head>
+  <body>
+    <main>
+      <h1>Intro to Cross-Site Scripting</h1>
+      <p>Cross-site scripting is a fancy term for when people run code on websites they don't own. This technique can be used to steal private information.</p>
+      <p>Website owners have to be very careful not to run code when users enter information.</p>
+      <p>Here is a snippet that makes a popup alert: </p>
+      <pre><code>&lt;script&gt;alert('hi');&lt;/script&gt;</code></pre>
+      <p>Instead of entering an email like a normal person, try pasting the above code and see what happens</p>
+      <div class="web">
+        <form id="signup" class="web-content">
+            <input id="email" type="text" placeholder="enter your email address"></input>
+            <input type="submit" value="Sign up"></input>
+            <p id="output"></p>
+        </form>
+      </div>
+      <div class="hidden">
+        <h2>Nice Job! 🎉</h2>
+        <p>Congratulations. You just used cross-site scripting. Try it out on other websites.</p>
+        <p>Attackers can use similar techniques to steal personal information on sites that don't block cross-site scripting.</p>
+        <a class="next" href="end.html">Finish →</button>
+      </div>
+    </main>
+    <footer><a href="http://atxhackforchange.org">made with ♡ for atxhackforchange</a></footer>
+    <script src="three.js"></script>
+  </body>
+</html>

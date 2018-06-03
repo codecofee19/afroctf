@@ -1,14 +1,16 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <title>AfroCTF</title>
   </head>
   <body>
     <main>
       <h1>Welcome to AfroCTF!</h1>
+      <p>AfroCTF is a set of challenges to learn about web security.</p>
+      <hr/>
       <p>Did you know that all pages are made of a special language called HTML? Your first challenge is taking a look under the hood of this web page. Let's uncover the secret password to continue.</p> 
       <p>Right-click on this page and click on <code>View Page Source</code>. You'll see a bunch of text that looks like this:</p>
       <img src="inspect.png"/>
-      <img src="afroctflag.png"/>
       <p>Explore the code and see if you can find the super secret password.</p>
         <form>
           <input id="input" type="text" placeholder="Enter super secret password"></input>
@@ -18,7 +20,7 @@
       <div class="hidden">
         <h2>Nice Job! 🎉</h2>
         <p>You found it! The source code contains all the things that make up this page, including the password. If you are building out a website, be sure not to include sensitive information in your code. People can still inspect it, even if it's not visible!</p>
-        <a class="next" href="two.html">Next Challenge →</button>
+        <a class="next" href="two.html">Next →</button>
       </div>
     </main>
     <footer><a href="http://atxhackforchange.org">made with ♡ for atxhackforchange</a></footer>
